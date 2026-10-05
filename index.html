@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Medusa — Beach Restaurant &amp; Bar · Hurghada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loadingScreen" class="loading-screen">
+  <div class="loading-spinner"></div>
+</div>
+
+<!-- ───────────────────────────────── NAV ──── -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" data-text="brand">Medusa</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+    <ul class="nav-links">
+      <li class="nav-item has-dropdown">
+        <a class="nav-link dropdown-trigger" href="#menu" aria-expanded="false">Menu</a>
+        <div class="top-dropdown menu-dropdown">
+          <div class="dropdown-grid">
+            <a class="drop-link" href="#menu" data-open-menu="breakfast">Breakfast</a>
+            <a class="drop-link" href="#menu" data-open-menu="food">Food</a>
+            <a class="drop-link" href="#menu" data-open-menu="medusaTaste">Medusa Taste</a>
+            <a class="drop-link" href="#menu" data-open-menu="drinks">Drinks</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li><a class="nav-link" href="#hours">Hours</a></li>
+      <li><a class="nav-link" href="#booking">Reservation</a></li>
+      <li><a class="btn btn-primary" href="#booking">Book a Table</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─────────────────────────── 1. HERO ──── -->
+<header class="hero">
+  <img id="heroImage" class="hero-img" src="images/678352779_3521845807967879_7740450839255360474_n.jpg" alt="Medusa restaurant Hurghada">
+  <div class="container hero-content reveal">
+    <div class="eyebrow" data-text="tagline">Beach Restaurant &amp; Bar · Hurghada</div>
+    <h1 id="heroTitle" style="color:#ffffff!important">Where the <em>Sea</em> meets the Table</h1>
+    <p class="lead" id="heroSubtitle">Mediterranean cuisine, fresh plates, and relaxed beach moments by the Red Sea.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#menu">View Menu</a>
+      <a class="btn btn-outline" href="#booking">Book a Table</a>
+    </div>
+  </div>
+
+  <!-- Scroll Down Indicator -->
+  <div class="scroll-indicator" id="scrollIndicator">
+    <div class="scroll-indicator-line"></div>
+    <div class="scroll-indicator-arrow">↓</div>
+  </div>
+</header>
+
+<!-- ─────────────────────────── 2. ABOUT US ──── -->
+<section class="section about-section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-text="tagline">Our Story</div>
+      <h2 class="title">About <em>Medusa</em></h2>
+    </div>
+    <div class="about-content reveal">
+      <div class="about-text">
+        <p class="lead">A beachside sanctuary where Mediterranean flavors meet the Red Sea breeze.</p>
+        <p>Medusa brings together the best of Mediterranean cuisine with fresh, locally-sourced ingredients and a relaxed atmosphere. Our terrace offers stunning sea views while you enjoy our signature dishes, from grilled seafood to authentic mezze platters.</p>
+        <p>Whether you're here for a leisurely breakfast, a sunset dinner, or evening drinks, Medusa provides the perfect setting for unforgettable moments by the sea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── 3. MENU ──── -->
+<section class="section menu-section" id="menu">
+  <div class="container">
+    <div class="taste-head reveal">
+      <h2 class="taste-title"><span>Taste it</span></h2>
+      <p class="taste-sub">Beach bistro — fresh plates, signature dishes, coffee and refreshing drinks.</p>
+    </div>
+    <!-- Filled by app.js — only shows categories with valid images -->
+    <div class="menu-category-grid" id="menuCategoryGrid"></div>
+  </div>
+</section>
+
+<!-- ─────────────────────────── 4. GALLERY PREVIEW (Mint-style) ──── -->
+<section class="section gallery-preview-section" id="gallery">
+  <div class="container">
+    <div class="gallery-head reveal">
+      <h2 class="gallery-title">Gallery</h2>
+      <p class="gallery-subtitle">Speaking about food, one picture often says more than a hundred words.</p>
+    </div>
+
+    <div class="gallery-collage-wrapper reveal">
+      <div class="gallery-collage-grid" id="galleryCollageGrid">
+        <!-- Images will be rendered by JavaScript -->
+      </div>
+      
+      <div class="gallery-overlay-btn-wrapper">
+        <a class="gallery-show-btn" href="gallery.html">SHOW GALLERY</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────── 5. OPENING HOURS + LOCATION ──── -->
+<section class="section hours-section" id="hours">
+  <div class="container">
+    <div class="hours-header reveal">
+      <span class="hours-line"></span>
+      <h2 class="hours-title">Opening hours</h2>
+      <span class="hours-line"></span>
+    </div>
+    <p class="hours-text reveal">Monday – Sunday: 09:00 – 23:00</p>
+    
+    <div class="location-card reveal">
+      <div class="location-image">
+        <img src="images/678398479_2088159145099965_5330343304089946040_n.jpg" alt="Medusa restaurant">
+      </div>
+      <div class="location-text">
+        <p>Medusa is located in Hurghada, Egypt, by the Red Sea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────── 6. RESERVATION (Mint-inspired) ──── -->
+<section class="visit-section" id="booking">
+  <!-- Top split: map (left) + restaurant photo (right) -->
+  <div class="visit-split">
+    <div class="visit-map">
+      <iframe id="defaultMapIframe"
+        src="https://maps.google.com/maps?q=Medusa+Restaurant+%26+Bar,Hurghada&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Medusa location map"></iframe>
+    </div>
+    <div class="visit-photo">
+      <img src="images/679734950_949537588060018_1078815194765989488_n.jpg" alt="Medusa Beach Restaurant interior" loading="lazy">
+    </div>
+
+    <!-- Floating reservation card -->
+    <div class="visit-form-card reveal" id="reserve">
+      <div class="eyebrow" style="justify-content:center">Reservation</div>
+      <h2 class="title">Book a <em>Table</em></h2>
+      <p class="lead">Reserve your spot at Medusa for an unforgettable dining experience.</p>
+      <form class="booking-grid" id="reservationForm" onsubmit="handleReservation(event)" novalidate>
+        <div class="field">
+          <label for="res-name">Your Name</label>
+          <input id="res-name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="res-phone">Phone / Email</label>
+          <input id="res-phone" name="phone" type="text" placeholder="Phone or email" required>
+        </div>
+        <div class="field">
+          <label for="res-guests">Number of Guests</label>
+          <input id="res-guests" name="guests" type="number" min="1" max="20" placeholder="2" required>
+        </div>
+        <div class="field">
+          <label for="res-date">Date</label>
+          <input id="res-date" name="date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="res-time">Time</label>
+          <input id="res-time" name="time" type="time" required>
+        </div>
+        <div class="field full">
+          <label for="res-message">Optional Message</label>
+          <textarea id="res-message" name="message" placeholder="Special requests (optional)"></textarea>
+        </div>
+        <div class="booking-submit-row">
+          <button class="btn btn-primary booking-submit-btn" type="submit">Book a Table</button>
+          <p class="booking-disclaimer">We'll confirm your reservation shortly.</p>
+        </div>
+      </form>
+      <div class="booking-success" id="reservationSuccess" style="display:none;">
+        <span class="booking-success-icon">✓</span>
+        <p>Reservation received!<br>We'll confirm your booking shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dark footer area: brand + contact + hours + navigate -->
+  <div class="visit-footer">
+    <div class="container visit-footer-grid">
+      <div class="vf-col vf-brand">
+        <div class="footer-logo" data-text="brand">Medusa</div>
+        <p>Beach restaurant &amp; bar on the Red Sea.<br>Open daily, 09:00 – 23:00.</p>
+        <div class="vf-social">
+          <a id="footerInstagram" href="https://www.instagram.com/medusahurghada/" target="_blank" rel="noopener">Instagram</a>
+          <a id="footerWhatsapp" href="https://wa.me/201035717074" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="vf-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a id="contactMapLink" href="https://goo.gl/maps/cg24a9GqmPvaot9y8" target="_blank" rel="noopener"><span id="contactLocation">Hurghada, Egypt</span></a></li>
+          <li><a id="contactPhoneLink" href="tel:+201035717074"><span id="contactPhone">+20 103 571 7074</span></a></li>
+          <li><a id="contactWhatsapp" href="https://wa.me/201035717074" target="_blank" rel="noopener">WhatsApp Chat</a></li>
+          <li><a id="contactInstagram" href="https://www.instagram.com/medusahurghada/" target="_blank" rel="noopener">@medusahurghada</a></li>
+        </ul>
+      </div>
+      <div class="vf-col">
+        <h4>Opening Hours</h4>
+        <ul class="vf-hours">
+          <li>Mon – Thu <b id="chWeekdays">09:00 – 23:00</b></li>
+          <li>Fri – Sun <b id="chWeekend">09:00 – 23:00</b></li>
+        </ul>
+      </div>
+      <div class="vf-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#booking">Book a Table</a></li>
+          <li><a id="footerMapLink" href="https://goo.gl/maps/cg24a9GqmPvaot9y8" target="_blank" rel="noopener">Open in Google Maps</a></li>
+          <li><a id="footerPhoneLink" href="tel:+201035717074">Call the Restaurant</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="visit-footer-bottom">
+      <div class="container">
+        <span>© 2025 Medusa Bar &amp; Restaurant · Hurghada, Egypt. All rights reserved.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev"  aria-label="Previous">‹</button>
+  <div class="lightbox-stage">
+    <img class="lightbox-img" alt="Preview">
+    <span class="lb-counter"></span>
+  </div>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
